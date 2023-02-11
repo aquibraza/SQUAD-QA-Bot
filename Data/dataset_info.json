@@ -1,0 +1,84 @@
+{
+  "builder_name": "squad",
+  "citation": "@article{2016arXiv160605250R,\n       author = {{Rajpurkar}, Pranav and {Zhang}, Jian and {Lopyrev},\n                 Konstantin and {Liang}, Percy},\n        title = \"{SQuAD: 100,000+ Questions for Machine Comprehension of Text}\",\n      journal = {arXiv e-prints},\n         year = 2016,\n          eid = {arXiv:1606.05250},\n        pages = {arXiv:1606.05250},\narchivePrefix = {arXiv},\n       eprint = {1606.05250},\n}\n",
+  "config_name": "plain_text",
+  "dataset_size": 89789763,
+  "description": "Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.\n",
+  "download_checksums": {
+    "https://rajpurkar.github.io/SQuAD-explorer/dataset/dev-v1.1.json": {
+      "checksum": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+      "num_bytes": 4854279
+    },
+    "https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v1.1.json": {
+      "checksum": "3527663986b8295af4f7fcdff1ba1ff3f72d07d61a20f487cb238a6ef92fd955",
+      "num_bytes": 30288272
+    }
+  },
+  "download_size": 35142551,
+  "features": {
+    "answers": {
+      "_type": "Sequence",
+      "feature": {
+        "answer_start": {
+          "_type": "Value",
+          "dtype": "int32",
+          "id": null
+        },
+        "text": {
+          "_type": "Value",
+          "dtype": "string",
+          "id": null
+        }
+      },
+      "id": null,
+      "length": -1
+    },
+    "context": {
+      "_type": "Value",
+      "dtype": "string",
+      "id": null
+    },
+    "id": {
+      "_type": "Value",
+      "dtype": "string",
+      "id": null
+    },
+    "question": {
+      "_type": "Value",
+      "dtype": "string",
+      "id": null
+    },
+    "title": {
+      "_type": "Value",
+      "dtype": "string",
+      "id": null
+    }
+  },
+  "homepage": "https://rajpurkar.github.io/SQuAD-explorer/",
+  "license": "",
+  "post_processed": null,
+  "post_processing_size": null,
+  "size_in_bytes": 124932314,
+  "splits": {
+    "train": {
+      "dataset_name": "squad",
+      "name": "train",
+      "num_bytes": 79317110,
+      "num_examples": 87599
+    },
+    "validation": {
+      "dataset_name": "squad",
+      "name": "validation",
+      "num_bytes": 10472653,
+      "num_examples": 10570
+    }
+  },
+  "supervised_keys": null,
+  "version": {
+    "description": "",
+    "major": 1,
+    "minor": 0,
+    "patch": 0,
+    "version_str": "1.0.0"
+  }
+}
